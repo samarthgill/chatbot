@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Chatbot</title>
+</head>
+<body>
+    <h1>Medical Chatbot</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Ask a question..." required>
+        <button type="submit">Ask</button>
+    </form>
+    {% if response %}
+        <h2>Answer:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
